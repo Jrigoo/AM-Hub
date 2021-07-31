@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --white: #f9fcffe8;
+  --blue1: #53a0fd;
+  --blue2: #4161d4;
+  --gray1: #535b7c;
+  --gray2: #959baf;
+  --gray3: #666666;
+  --black1: #1f1f1f;
+  --black2: #333;
+  --burguer: #2ea3f2;
+  --horizontal-pad: 6vw;
+  --light-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  --links: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 10vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fixed__navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: var(--light-shadow);
+  z-index: 950;
+  transition: all 0.1s ease-in;
+}
+.navbar__logo {
+  width: 50%;
+  padding: 10px var(--horizontal-pad) 0px var(--horizontal-pad);
+}
+.navbar__logo img {
+  width: 100%;
+}
+.navbar__links {
+  width: 100%;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  background-color: white;
+  padding-left: var(--horizontal-pad);
+}
+
+.navbar__links-list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.navbar__links-list li {
+  list-style: none;
+  width: 100%;
+  padding-top: 10px;
+}
+.navbar__links-list li a {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  text-decoration: none;
+  padding-right: 15px;
+  color: var(--links);
+}
+
+.navbar__toggle {
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding: 20px var(--horizontal-pad) 0px var(--horizontal-pad);
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: var(--burguer);
+}
+
+.header__titles {
+  width: 100%;
+  background: rgb(83, 160, 253);
+  background: linear-gradient(
+    135deg,
+    rgba(83, 160, 253, 1) 40%,
+    rgba(65, 115, 212, 1) 81%
+  );
+  color: var(--white);
+  text-align: center;
+  padding: 20px var(--horizontal-pad) 50px var(--horizontal-pad);
+}
+.header__titles h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.header__titles h3 {
+  font-size: 1.8rem;
+  font-weight: 350;
+  padding-top: 10px;
+  color: white;
+}
+
+/* platform__explanation -------------------------------------------------------------- */
+.platform__explanation {
+  width: 100%;
+  padding: 20px var(--horizontal-pad) 0px var(--horizontal-pad);
+  text-align: center;
+  background-color: var(--white);
+}
+
+.platform__explanation h1 {
+  width: 100%;
+  font-size: 2.3rem;
+  color: var(--gray1);
+  padding: 10px 0px 30px 0px;
+}
+.explanation__item {
+  width: 100%;
+  padding-bottom: 40px;
+}
+#second__item {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: var(--light-shadow);
+  border-top: 5px solid var(--blue1);
+}
+.explanation__item i {
+  color: var(--gray1);
+  font-size: 4rem;
+  padding: 23px 0px;
+}
+.exp__item--title {
+  width: 100%;
+  font-size: 1.8rem;
+  color: var(--gray1);
+  margin-bottom: 15px;
+}
+.exp__item--description {
+  color: var(--gray2);
+  font-size: 1.3rem;
+  padding: 0px 12px;
+}
+/*  AM__TEAM -------------------------------------------------------------- */
+.AM__team {
+  width: 100%;
+  padding: 20px var(--horizontal-pad) 0px var(--horizontal-pad);
+  text-align: center;
+  background-color: var(--white);
+}
+.AM__team h1 {
+  width: 100%;
+  font-size: 2.3rem;
+  color: var(--black2);
+}
+.team__container {
+  padding: 20px 0px;
+}
+.team__image {
+  width: 100%;
+}
+.team__image img {
+  width: 50%;
+}
+.team__container h1 {
+  color: var(--black2);
+  font-size: 2rem;
+  padding-top: 10px;
+}
+.team__container h3 {
+  color: var(--gray3);
+  font-size: 1.3rem;
+  font-weight: 380;
+}
+.line__division {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+hr {
+  width: 80%;
+}
+/* Platform Team-------------------------------------------- */
+.platform__team {
+  width: 100%;
+  padding: 20px var(--horizontal-pad) 0px var(--horizontal-pad);
+  text-align: center;
+  background-color: var(--white);
+}
+.platform__team h1 {
+  font-size: 2.3rem;
+  color: var(--black2);
+}
+.footer {
+  width: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px var(--horizontal-pad);
+}
+.footer p {
+  color: var(--gray3);
+  font-size: 1rem;
+  margin: 0;
+}
+.footer i {
+  color: var(--gray3);
+  font-size: 3rem;
+}
